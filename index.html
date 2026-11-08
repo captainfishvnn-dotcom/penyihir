@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akademi Sihir Bahasa: Pembelajaran Teks</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Partikel Sihir -->
-    <div class="stars"></div>
+    <!-- Lapis Visual Latar Kastil Penyihir -->
+    <div class="bg-castle"></div>
+    <div class="bg-overlay"></div>
+    <div class="magic-particles"></div>
 
     <div class="container">
         <header>
+            <div class="emblem">✨ 🔮 ✨</div>
             <h1>Perpustakaan Sihir Bahasa</h1>
-            <p>Pilihlah gulungan kitab pengetahuan yang ingin dipelajari</p>
+            <p>Pilihlah gulungan kitab pengetahuan di Kastil Utama untuk dipelajari</p>
         </header>
 
         <!-- Halaman Utama / Pilihan Teks -->
         <div id="main-menu" class="card-grid">
             <div class="card" onclick="openTopic('deskripsi')">
+                <div class="card-glow"></div>
                 <div class="card-icon">📜</div>
                 <h2>Teks Deskripsi</h2>
                 <p>Melukis objek dan suasana melalui gambaran panca indra.</p>
@@ -28,6 +32,7 @@
             </div>
 
             <div class="card" onclick="openTopic('cerpen')">
+                <div class="card-glow"></div>
                 <div class="card-icon">📖</div>
                 <h2>Teks Cerpen</h2>
                 <p>Kisah singkat fiktif yang memikat dalam sekali duduk.</p>
@@ -35,6 +40,7 @@
             </div>
 
             <div class="card" onclick="openTopic('eksposisi')">
+                <div class="card-glow"></div>
                 <div class="card-icon">🔮</div>
                 <h2>Teks Eksposisi</h2>
                 <p>Penyampaian fakta dan ilmu pengetahuan secara objektif.</p>
@@ -44,7 +50,7 @@
 
         <!-- Detail Pembelajaran -->
         <main id="content-display" class="content-box hidden">
-            <button class="btn-back" onclick="closeTopic()">← Kembali ke Daftar Kitab</button>
+            <button class="btn-back" onclick="closeTopic()">← Kembali ke Ruang Utama</button>
             
             <!-- Content Teks Deskripsi -->
             <article id="deskripsi" class="topic-content hidden">
