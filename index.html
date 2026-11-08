@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademi Sihir Bahasa: Pembelajaran Teks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Partikel Sihir -->
+    <div class="stars"></div>
+
+    <div class="container">
+        <header>
+            <h1>Perpustakaan Sihir Bahasa</h1>
+            <p>Pilihlah gulungan kitab pengetahuan yang ingin dipelajari</p>
+        </header>
+
+        <!-- Halaman Utama / Pilihan Teks -->
+        <div id="main-menu" class="card-grid">
+            <div class="card" onclick="openTopic('deskripsi')">
+                <div class="card-icon">📜</div>
+                <h2>Teks Deskripsi</h2>
+                <p>Melukis objek dan suasana melalui gambaran panca indra.</p>
+                <button class="btn">Buka Kitab</button>
+            </div>
+
+            <div class="card" onclick="openTopic('cerpen')">
+                <div class="card-icon">📖</div>
+                <h2>Teks Cerpen</h2>
+                <p>Kisah singkat fiktif yang memikat dalam sekali duduk.</p>
+                <button class="btn">Buka Kitab</button>
+            </div>
+
+            <div class="card" onclick="openTopic('eksposisi')">
+                <div class="card-icon">🔮</div>
+                <h2>Teks Eksposisi</h2>
+                <p>Penyampaian fakta dan ilmu pengetahuan secara objektif.</p>
+                <button class="btn">Buka Kitab</button>
+            </div>
+        </div>
+
+        <!-- Detail Pembelajaran -->
+        <main id="content-display" class="content-box hidden">
+            <button class="btn-back" onclick="closeTopic()">← Kembali ke Daftar Kitab</button>
+            
+            <!-- Content Teks Deskripsi -->
+            <article id="deskripsi" class="topic-content hidden">
+                <h2>Teks Deskripsi</h2>
+                <p class="intro">Teks deskripsi adalah jenis teks yang menggambarkan suatu objek, tempat, atau peristiwa secara terperinci sehingga pembaca seolah-olah dapat melihat, mendengar, merasakan, atau mengalami sendiri apa yang dideskripsikan oleh penulis.</p>
+
+                <h3>1. Tujuan Teks Deskripsi</h3>
+                <p>Tujuan utama teks deskripsi adalah untuk menggambarkan atau melukiskan suatu objek secara rinci dan subjektif (sesuai sudut pandang penulis) agar pembaca dapat merasakan atau membayangkan objek tersebut secara jelas.</p>
+
+                <h3>2. Ciri-Ciri Teks Deskripsi</h3>
+                <ul>
+                    <li><strong>Melibatkan Pancaindra:</strong> Penggambaran dilakukan dengan memanfaatkan indra penglihatan, pendengaran, penciuman, pengecapan, atau perabaan.</li>
+                    <li><strong>Penggambaran Spesifik:</strong> Berfokus pada objek tertentu secara rinci (misalnya bukan sekadar "kucing", melainkan "Kucing Anggora kesayanganku").</li>
+                    <li><strong>Banyak Menggunakan Kata Sifat:</strong> Menggunakan kata-kata yang menjelaskan kondisi, ukuran, warna, atau sifat objek (misalnya tinggi, indah, lembut, ramah).</li>
+                    <li><strong>Menjelaskan Ciri Fisik dan Sifat:</strong> Menguraikan bentuk, warna, ukuran, hingga karakter atau suasana objek.</li>
+                </ul>
+
+                <h3>3. Struktur Teks Deskripsi</h3>
+                <ul>
+                    <li><strong>Identifikasi / Pengenalan:</strong> Bagian awal yang berisi pengenalan nama objek, lokasi, sejarah, atau gambaran umum tentang hal yang akan dideskripsikan.</li>
+                    <li><strong>Deskripsi Bagian:</strong> Bagian yang memuat gambaran rinci tentang objek tersebut berdasarkan tangkapan pancaindra (misalnya bagian-bagian objek, warna, bentuk, atau suasana).</li>
+                    <li><strong>Simpulan / Kesan:</strong> Bagian penutup yang berisi kesan umum atau pandangan personal penulis terhadap objek tersebut (bersifat opsional).</li>
+                </ul>
+
+                <h3>4. Jenis-Jenis Teks Deskripsi</h3>
+                <p><strong>Berdasarkan Bentuk Teks:</strong></p>
+                <ul>
+                    <li><strong>Teks Deskripsi Berdiri Sendiri:</strong> Teks yang khusus dan utuh menggambarkan suatu objek dari awal hingga akhir.</li>
+                    <li><strong>Teks Deskripsi yang Menjadi Bagian Teks Lain:</strong> Teks deskripsi yang terselip dalam karya lain, seperti novel, cerpen, lirik lagu, atau teks iklan.</li>
+                </ul>
+                <p><strong>Berdasarkan Objek Penggambaran:</strong></p>
+                <ul>
+                    <li><strong>Deskripsi Spasial:</strong> Menggambarkan tempat atau ruang secara rinci (misalnya suasana kamar tidur atau tata ruang museum).</li>
+                    <li><strong>Deskripsi Subjektif:</strong> Penggambaran objek yang disertai tanggapan atau perasaan pribadi penulis.</li>
+                    <li><strong>Deskripsi Objektif:</strong> Penggambaran objek apa adanya berdasarkan fakta tanpa ditambahi opini pribadi.</li>
+                    <li><strong>Deskripsi Orang/Makhluk Hidup:</strong> Menggambarkan fisik, watak, atau kebiasaan seorang tokoh atau makhluk hidup.</li>
+                </ul>
+
+                <h3>5. Kaidah Kebahasaan</h3>
+                <ul>
+                    <li><strong>Penggunaan Kata Khusus:</strong> Menggunakan kata bermakna spesifik (contoh: kata umum <em>melihat</em>, kata khusus <em>menatap, memandang, mengamati</em>).</li>
+                    <li><strong>Penggunaan Kalimat Rinci:</strong> Kalimat yang menjelaskan secara mendalam untuk mengonkretkan objek.</li>
+                    <li><strong>Penggunaan Kata Sifat:</strong> Digunakan untuk memuat gambaran kondisi (contoh: <em>kulitnya halus, bersih, dan harum</em>).</li>
+                    <li><strong>Penggunaan Kata Kerja Prosedur/Keadaan:</strong> Menggambarkan tindakan atau kondisi objek.</li>
+                    <li><strong>Penggunaan Preposisi (Kata Depan):</strong> Kata depan seperti <em>di, ke, dari</em> untuk menunjukkan tempat atau lokasi.</li>
+                </ul>
+
+                <h3>6. Gaya Bahasa (Majas)</h3>
+                <ul>
+                    <li><strong>Majas Personifikasi:</strong> Menggambarkan benda mati seolah-olah memiliki sifat manusia. <br><em>Contoh: "Ombak di pantai itu saling berkejaran menepi ke daratan."</em></li>
+                    <li><strong>Majas Asosiasi / Perumpamaan:</strong> Membandingkan dua hal yang berbeda menggunakan kata penghubung (bagaikan, seperti, laksana). <br><em>Contoh: "Wajahnya cerah bagaikan mentari di pagi hari."</em></li>
+                    <li><strong>Majas Metafora:</strong> Membandingkan dua hal secara langsung tanpa kata pembanding. <br><em>Contoh: "Dewi malam telah keluar dari balik awan."</em></li>
+                </ul>
+            </article>
+
+            <!-- Content Teks Cerpen -->
+            <article id="cerpen" class="topic-content hidden">
+                <h2>Teks Cerpen (Cerita Pendek)</h2>
+                <p class="intro">Teks cerpen adalah salah satu bentuk karya sastra berwujud prosa fiktif yang menceritakan satu peristiwa atau konflik utama secara ringkas, berfokus pada satu tokoh utama, serta dapat dibaca selesai dalam sekali duduk.</p>
+
+                <h3>1. Tujuan Teks Cerpen</h3>
+                <ul>
+                    <li><strong>Hiburan:</strong> Memberikan hiburan atau pengalaman estetis kepada pembaca melalui jalinan cerita.</li>
+                    <li><strong>Penyampaian Pesan/Amanat:</strong> Menyampaikan nilai-nilai moral, sosial, atau pelajaran hidup.</li>
+                    <li><strong>Ekspresi Diri:</strong> Sarana bagi penulis untuk mengungkapkan ide, gagasan, emosi, atau pandangan hidup.</li>
+                </ul>
+
+                <h3>2. Ciri-Ciri Teks Cerpen</h3>
+                <ul>
+                    <li><strong>Panjang Cerita Ringkas:</strong> Umumnya terdiri dari 1.000 hingga 10.000 kata (selesai dibaca 10–30 menit).</li>
+                    <li><strong>Fokus Konflik Tunggal:</strong> Berpusat pada satu masalah utama tanpa plot bercabang.</li>
+                    <li><strong>Penokohan Terbatas:</strong> Tokoh sedikit dan wataknya diungkapkan secara terbatas.</li>
+                    <li><strong>Latar Terbatas:</strong> Ruang, waktu, dan suasana yang digambarkan tidak terlalu luas.</li>
+                    <li><strong>Sifat Fiktif:</strong> Mengangkat cerita imajinatif atau rekaan.</li>
+                </ul>
+
+                <h3>3. Struktur Teks Cerpen</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Struktur</th>
+                                <th>Penjelasan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Abstrak (Opsional)</strong></td>
+                                <td>Gambaran umum atau inti awal cerita sebagai pengantar.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Orientasi</strong></td>
+                                <td>Pengenalan latar (waktu, tempat, suasana), tokoh, dan penataan hubungan antartokoh.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Komplikasi</strong></td>
+                                <td>Munculnya urutan kejadian yang menimbulkan konflik atau permasalahan utama.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Evaluasi</strong></td>
+                                <td>Konflik mulai diarahkan menuju penyelesaian atau klimaks masalah.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Resolusi</strong></td>
+                                <td>Bagian di mana konflik menemukan titik terang dan solusi penyelesaian.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Koda (Opsional)</strong></td>
+                                <td>Nilai moral, pesan, atau pelajaran yang dapat dipetik dari keseluruhan cerita.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>4. Jenis-Jenis Teks Cerpen</h3>
+                <p><strong>Berdasarkan Panjang Kata:</strong></p>
+                <ul>
+                    <li><strong>Flash Fiction:</strong> Di bawah 750–1.000 kata.</li>
+                    <li><strong>Cerpen Sedang:</strong> Sekitar 1.000 hingga 5.000 kata.</li>
+                    <li><strong>Cerpen Panjang:</strong> Berkisar antara 5.000 hingga 10.000 kata.</li>
+                </ul>
+                <p><strong>Berdasarkan Tema / Cerita:</strong></p>
+                <ul>
+                    <li><strong>Cerpen Realis:</strong> Mengangkat tema kehidupan sehari-hari secara logis.</li>
+                    <li><strong>Cerpen Fantasi / Misteri:</strong> Mengangkat cerita imajinatif, keajaiban, atau hal supernatural.</li>
+                    <li><strong>Cerpen Humoris:</strong> Mengedepankan unsur kelucuan atau sindiran ringan.</li>
+                </ul>
+
+                <h3>5. Kaidah Kebahasaan Teks Cerpen</h3>
+                <ul>
+                    <li><strong>Kata Kerja Aktif:</strong> Menggambarkan tindakan tokoh (contoh: <em>menatap, melangkah, menggenggam</em>).</li>
+                    <li><strong>Kalimat Lampau:</strong> Menandakan peristiwa yang sudah terjadi (contoh: <em>suatu hari, kemarin, beberapa tahun lalu</em>).</li>
+                    <li><strong>Sudut Pandang:</strong> Menggunakan kata ganti orang pertama (aku/saya) atau orang ketiga (dia/mereka/nama tokoh).</li>
+                    <li><strong>Kata Keterangan (Adverbia):</strong> Mendeskripsikan waktu, tempat, dan suasana.</li>
+                    <li><strong>Majas / Gaya Bahasa:</strong> Memperindah narasi melalui metafora, personifikasi, atau simile.</li>
+                    <li><strong>Kalimat Langsung:</strong> Berupa dialog antar-tokoh yang ditandai dengan tanda petik ganda ("...").</li>
+                </ul>
+            </article>
+
+            <!-- Content Teks Eksposisi -->
+            <article id="eksposisi" class="topic-content hidden">
+                <h2>Teks Eksposisi</h2>
+                <p class="intro">Teks eksposisi adalah teks nonfiksi yang berisi gagasan, informasi, atau pengetahuan yang disampaikan secara singkat, padat, jelas, dan akurat berdasarkan fakta untuk memperluas wawasan pembaca.</p>
+
+                <h3>1. Tujuan Teks Eksposisi</h3>
+                <ul>
+                    <li>Menjelaskan atau menyampaikan informasi/pengetahuan tertentu kepada pembaca.</li>
+                    <li>Membantu pembaca memahami suatu objek, isu, atau topik secara objektif tanpa bermaksud memengaruhi secara langsung.</li>
+                </ul>
+
+                <h3>2. Struktur Teks Eksposisi</h3>
+                <ul>
+                    <li><strong>Tesis (Pernyataan Pendapat):</strong> Bagian pembuka yang berisi pengenalan isu, masalah, atau pandangan umum penulis.</li>
+                    <li><strong>Argumentasi:</strong> Bagian isi berupa bukti, fakta, atau data pendukung yang memperkuat tesis.</li>
+                    <li><strong>Penegasan Ulang (Reorientasi):</strong> Bagian penutup yang berisi kesimpulan atau penegasan kembali atas gagasan awal.</li>
+                </ul>
+
+                <h3>3. Ciri-Ciri Teks Eksposisi</h3>
+                <ul>
+                    <li><strong>Objektif dan Bersifat Informasi:</strong> Menyampaikan pengetahuan atau fakta tanpa rekayasa.</li>
+                    <li><strong>Bahasa Baku dan Lugas:</strong> Menggunakan kata-kata yang jelas, tegas, dan tidak berbelit-belit.</li>
+                    <li><strong>Berdasarkan Fakta:</strong> Didukung oleh data konkret (angka, riset, atau pernyataan ahli).</li>
+                    <li><strong>Tidak Memaksa:</strong> Hanya menyajikan informasi tanpa memaksa pembaca menyetujui pendapat.</li>
+                </ul>
+
+                <h3>4. Jenis-Jenis Teks Eksposisi</h3>
+                <ul>
+                    <li><strong>Eksposisi Definisi:</strong> Menjelaskan pengertian atau batasan suatu topik/istilah.</li>
+                    <li><strong>Eksposisi Proses:</strong> Berisi langkah-langkah atau tahapan dalam membuat/melakukan sesuatu.</li>
+                    <li><strong>Eksposisi Berita:</strong> Memberikan informasi mengenai suatu peristiwa yang terjadi.</li>
+                    <li><strong>Eksposisi Ilustrasi:</strong> Menggunakan gambaran sederhana untuk menjelaskan topik rumit.</li>
+                    <li><strong>Eksposisi Perbandingan/Pertentangan:</strong> Membandingkan dua hal atau menentangkan gagasan.</li>
+                    <li><strong>Eksposisi Analisis:</strong> Membagi gagasan utama menjadi beberapa bagian terperinci lalu mengembangkannya secara sistematis.</li>
+                </ul>
+
+                <h3>5. Kaidah Kebahasaan Teks Eksposisi</h3>
+                <ul>
+                    <li><strong>Kata Teknis / Istilah Bidang:</strong> Kata khusus sesuai topik (misal: <em>fotosintesis, inflasi, ekosistem</em>).</li>
+                    <li><strong>Kata Kerja Mental (Verba Mental):</strong> Menunjukkan persepsi/respons (contoh: <em>memahami, memperkirakan, berpendapat</em>).</li>
+                    <li><strong>Kata Hubung Kausalitas & Kronologis:</strong> 
+                        <br>- <em>Kausalitas:</em> karena, sebab, oleh karena itu, sehingga.
+                        <br>- <em>Kronologis:</em> kemudian, setelah itu, lalu, sebelum.
+                    </li>
+                    <li><strong>Kata Perujukan:</strong> Kata yang merujuk fakta/data (contoh: <em>berdasarkan data..., merujuk pada pendapat...</em>).</li>
+                    <li><strong>Kata Persuasif/Imbauan (Halus):</strong> Penggunaan kata seperti <em>seharusnya, sebaiknya, perlu, hendaklah</em>.</li>
+                </ul>
+            </article>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
