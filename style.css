@@ -1,0 +1,216 @@
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #0d0914 0%, #171226 50%, #0a1118 100%);
+    color: #e2d9f3;
+    min-height: 100vh;
+    padding: 40px 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Background Atmospheric Overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 20%, rgba(138, 75, 175, 0.15), transparent 60%),
+                radial-gradient(circle at 80% 80%, rgba(46, 117, 134, 0.1), transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #d4af37;
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #a89cc2;
+    font-size: 1.1rem;
+}
+
+/* Card Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(26, 21, 37, 0.75);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.7);
+    box-shadow: 0 12px 30px rgba(138, 75, 175, 0.3);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-family: 'Cinzel', serif;
+    color: #f1e6c8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b5a8cb;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(135deg, #5b327a, #3a2254);
+    color: #f1e6c8;
+    border: 1px solid #d4af37;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card:hover .btn {
+    background: linear-gradient(135deg, #7c43a6, #4d2b70);
+}
+
+.btn-back {
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: rgba(212, 175, 55, 0.15);
+}
+
+/* Content Area */
+.content-box {
+    background: rgba(20, 16, 29, 0.85);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    padding: 35px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.topic-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #d4af37;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.topic-content h3 {
+    font-family: 'Cinzel', serif;
+    color: #cbb4d9;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.topic-content p {
+    line-height: 1.7;
+    color: #dcd3eb;
+    margin-bottom: 12px;
+}
+
+.topic-content p.intro {
+    font-size: 1.05rem;
+    background: rgba(138, 75, 175, 0.15);
+    padding: 15px;
+    border-left: 3px solid #d4af37;
+    border-radius: 4px;
+}
+
+.topic-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.topic-content li {
+    line-height: 1.7;
+    margin-bottom: 8px;
+    color: #dcd3eb;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(15, 12, 22, 0.6);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+th {
+    background: rgba(91, 50, 122, 0.4);
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+}
+
+td {
+    color: #dcd3eb;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
